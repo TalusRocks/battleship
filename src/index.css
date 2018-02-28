@@ -7,11 +7,18 @@ body {
   font-family: sans-serif;
 }
 
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 2em;
+}
+
 .grid-wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 5em;
+  margin-top: 3em;
+  color: #0288d1;
 }
 
 .square-wrapper {
@@ -24,6 +31,7 @@ body {
   align-items: center;
   justify-content: center;
   border: 1px solid #0288d1;
+  background-color: #b3e5fc;
   width: 5em;
   height: 5em;
 }
@@ -41,9 +49,9 @@ body {
 }
 
 .hitShip {
-  background-color: red;
+  background-color: #f44336;
 }
 
 .missShip {
-  background-color: #efefef;
+  background-color: #81d4fa;
 }

@@ -6,9 +6,8 @@ class App extends Component {
   state = {
     ships: {
       shipOne: [[1, 'A'], [1, 'B'], [1, 'C']],
-      shipTwo: [[2, 'B'], [2, 'C']]
+      shipTwo: [[6, 'B'], [7, 'B'], [8, 'B']]
     }
-
   }
 
 
@@ -21,15 +20,11 @@ class App extends Component {
     for(var i in ships){
 
       for(let k = 0; k < ships[i].length; k++){
-
         if(ships[i][k][0] === column && ships[i][k][1] === row){
           console.log("HIT!!!");
           hit = true
-
         }
-
       }
-
     }
 
     if (hit){
@@ -46,6 +41,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+
+        <h1>Battleship</h1>
 
         <div className="grid-wrapper">
 
@@ -65,43 +62,42 @@ class App extends Component {
           <div className="square-wrapper">
             <div className="square letter">A</div>
             <div onClick={ this.guess } className="square target" id="1A"></div>
-            <div onClick={ this.guess } className="square target"></div>
-            <div className="square target"></div>
-            <div className="square target"></div>
-            <div className="square target"></div>
-            <div className="square target"></div>
-            <div className="square target"></div>
-            <div className="square target"></div>
-            <div className="square target"></div>
-            <div className="square target"></div>
+            <div onClick={ this.guess } className="square target" id="2A"></div>
+            <div onClick={ this.guess } className="square target" id="3A"></div>
+            <div onClick={ this.guess } className="square target" id="4A"></div>
+            <div onClick={ this.guess } className="square target" id="5A"></div>
+            <div onClick={ this.guess } className="square target" id="6A"></div>
+            <div onClick={ this.guess } className="square target" id="7A"></div>
+            <div onClick={ this.guess } className="square target" id="8A"></div>
+            <div onClick={ this.guess } className="square target" id="9A"></div>
+            <div onClick={ this.guess } className="square target" id="10A"></div>
           </div>
           <div className="square-wrapper">
             <div className="square letter">B</div>
-            <div className="square target"></div>
-            <div className="square target"></div>
-            <div className="square target"></div>
-            <div className="square target"></div>
-            <div className="square target"></div>
-            <div className="square target"></div>
-            <div className="square target"></div>
-            <div className="square target"></div>
-            <div className="square target"></div>
-            <div className="square target"></div>
+            <div onClick={ this.guess } className="square target" id="1B"></div>
+            <div onClick={ this.guess } className="square target" id="2B"></div>
+            <div onClick={ this.guess } className="square target" id="3B"></div>
+            <div onClick={ this.guess } className="square target" id="4B"></div>
+            <div onClick={ this.guess } className="square target" id="5B"></div>
+            <div onClick={ this.guess } className="square target" id="6B"></div>
+            <div onClick={ this.guess } className="square target" id="7B"></div>
+            <div onClick={ this.guess } className="square target" id="8B"></div>
+            <div onClick={ this.guess } className="square target" id="9B"></div>
+            <div onClick={ this.guess } className="square target" id="10B"></div>
           </div>
           <div className="square-wrapper">
             <div className="square letter">C</div>
-            <div className="square target"></div>
-            <div className="square target"></div>
-            <div className="square target"></div>
-            <div className="square target"></div>
-            <div className="square target"></div>
-            <div className="square target"></div>
-            <div className="square target"></div>
-            <div className="square target"></div>
-            <div className="square target"></div>
-            <div className="square target"></div>
+            <div onClick={ this.guess } className="square target" id="1C"></div>
+            <div onClick={ this.guess } className="square target" id="2C"></div>
+            <div onClick={ this.guess } className="square target" id="3C"></div>
+            <div onClick={ this.guess } className="square target" id="4C"></div>
+            <div onClick={ this.guess } className="square target" id="5C"></div>
+            <div onClick={ this.guess } className="square target" id="6C"></div>
+            <div onClick={ this.guess } className="square target" id="7C"></div>
+            <div onClick={ this.guess } className="square target" id="8C"></div>
+            <div onClick={ this.guess } className="square target" id="9C"></div>
+            <div onClick={ this.guess } className="square target" id="10C"></div>
           </div>
-
 
         </div>
 
