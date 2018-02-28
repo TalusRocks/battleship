@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.grid-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5em;
+}
+
+.square-wrapper {
+  display: flex;
+  margin: 0 auto;
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #0288d1;
+  width: 5em;
+  height: 5em;
+}
+
+.target {
+  transition: 0.5s;
+}
+
+.target:hover {
+  background-color: #e1f5fe;
+}
+
+.target:active {
+  background-color: #b3e5fc;
+}
+
+.hitShip {
+  background-color: red;
+}
+
+.missShip {
+  background-color: #efefef;
+}
